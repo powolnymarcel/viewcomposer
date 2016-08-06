@@ -18,6 +18,7 @@ class NavigationViewComposer
         }
 
         $view->with('messages',Auth::user()->messages()->get());
+       // $view->with('messages_count',Auth::user()->messages()->count());
     }
 
 }

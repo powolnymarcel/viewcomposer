@@ -31,6 +31,7 @@
                 @else
 
                     <li><a href="#"><i class="fa fa-btn fa-envelope"></i>{{$messages->count()}}</a></li>
+                    <!--<li><a href="#"><i class="fa fa-btn fa-envelope"></i>{{$messages_count}}</a></li>-->
 
 
                     <li class="dropdown">
