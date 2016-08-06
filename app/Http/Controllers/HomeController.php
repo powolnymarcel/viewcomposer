@@ -22,8 +22,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        $messages=$request->user()->messages()->get();
+
+        return view('home')->withMessages($messages);
     }
 }
